@@ -1,3 +1,4 @@
+import 'package:bus_tracking/pages/sign_up_2.dart';
 import 'package:flutter/material.dart';
 
 class Sample1 extends StatefulWidget {
@@ -61,14 +62,19 @@ class _Sample1State extends State<Sample1> {
                 ),
                 const SizedBox(width: 30),
                 Expanded(
-                  child: Container(
-                    height: 50,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(50),
-                        color: Colors.black
-                    ),
-                    child: const Center(
-                      child: Text("Sign up",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
+                  child: InkWell(
+                    onTap: (){
+                      Navigator.pushNamed(context,"sign_up_page");
+                    },
+                    child: Container(
+                      height: 50,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(50),
+                          color: Colors.black
+                      ),
+                      child: const Center(
+                        child: Text("Sign up",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
+                      ),
                     ),
                   ),
                 ),
