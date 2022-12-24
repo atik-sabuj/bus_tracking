@@ -39,10 +39,43 @@ class _Sample1State extends State<Sample1> {
                 children: const[
                   Text("Login",style: TextStyle(color: Colors.white,fontSize: 40),),
                   SizedBox(height: 10,),
-                  Text("Welcome Back",style: TextStyle(color: Colors.white,fontSize: 20),),
+                  Text("Welcome",style: TextStyle(color: Colors.white,fontSize: 20),),
                 ],
               ),
             ),
+
+            const SizedBox(height: 30),
+            Row(
+              children: [
+                Expanded(
+                  child: Container(
+                    height: 50,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(50),
+                        color: Colors.blue
+                    ),
+                    child: const Center(
+                      child: Text("Sign in",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
+                    ),
+                  ),
+                ),
+                const SizedBox(width: 30),
+                Expanded(
+                  child: Container(
+                    height: 50,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(50),
+                        color: Colors.black
+                    ),
+                    child: const Center(
+                      child: Text("Sign up",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+
+
             const SizedBox(height: 20),
 
             Expanded(
@@ -114,39 +147,7 @@ class _Sample1State extends State<Sample1> {
                             child: Text("Login",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
                           ),
                         ),
-                        const SizedBox(height: 30),
-                        // #login SNS
-                        const Text("Login with SNS",style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold),),
-                        const SizedBox(height: 30),
-                        Row(
-                          children: [
-                            Expanded(
-                              child: Container(
-                                height: 50,
-                                decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(50),
-                                    color: Colors.blue
-                                ),
-                                child: const Center(
-                                  child: Text("Facebook",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
-                                ),
-                              ),
-                            ),
-                            const SizedBox(width: 30),
-                            Expanded(
-                              child: Container(
-                                height: 50,
-                                decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(50),
-                                    color: Colors.black
-                                ),
-                                child: const Center(
-                                  child: Text("Github",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
+
                       ],
                     ),
                   ),
